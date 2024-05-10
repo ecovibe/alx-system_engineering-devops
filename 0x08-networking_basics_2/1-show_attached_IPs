@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Retrieve the list of network interfaces
+interfaces=$(ip -4 addr show | grep inet | awk '{print $NF}')
+
+# Loop through each interface and extract its IPv4 address
+for interface in $interfaces; do
+    ipv4=$(ip -4 addr show $interface | grep -oP '(?<=inet\s)\d+(\.\d+){3}')
+    if [ -n "$ipv4" ]; then
+        echo "$ipv4"
+    fi
+done
