@@ -1,3 +1,6 @@
+
+![WhatsApp Image 2024-08-22 at 10 47 20 PM](https://github.com/user-attachments/assets/44451a6a-073a-45a7-addc-01ae2e09f113)
+
 Sqll 1. POSTMORTEM: UNAUTHORIZED ACCESS TO CUSTOMER DATABASE
 Incident Description:
 On 22 august 2024, at :00 hours, an external security alert from our intrusion detection system (IDS) indicated suspicious activity originating from an unknown IP address. This led to a Global outage of our web application firewall resulting into;-
